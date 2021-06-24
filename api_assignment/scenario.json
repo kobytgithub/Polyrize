@@ -1,0 +1,14 @@
+{
+  "scenario":
+  [
+     {"test": "test_authenticate"},
+     {"test": "test_authenticate", "username": "x", "password": "y", "expect_to_fail": true},
+     {"test": "test_get_object_list"},
+     {"test": "test_create_object"},
+     {"test": "test_create_object", "dict_obj": {"data": {"hi": "hello", "arr": ["1", "2", "3"]}}},
+     {"test": "test_get_object_by_id"},
+     {"test": "test_get_object_by_id", "object_id": "x", "expect_to_fail": true},
+     {"test": "test_create_object_and_verify", "dict_obj": {"data": [{"key": "key1", "val": "val1", "valType": "str"}]}},
+     {"test": "test_delete_object"}
+  ]
+}
